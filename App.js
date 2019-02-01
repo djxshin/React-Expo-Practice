@@ -26,20 +26,30 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        
+     
+      <View style={{ flex:1, alignItems: 'center', justifyContent:'center'}}>
+
+     
+
+      <View style={{height:200, width:200, backgroundColor:'pink', alignItems: 'center', justifyContent:'center'}}>
       <Text>{this.state.productCount}</Text>
       <CustomButton onPress={this.addProduct}/>
+      
       </View>
+
+      </View>   
     );
   }
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create({ 
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'orange',
     alignItems: 'center',
     justifyContent: 'center',
   },
+    textColor:{
+      color:"aqua"
+    }
 });
