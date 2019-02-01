@@ -1,18 +1,18 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import CustomButton from "./components/CustomButton.js"
-// import * as firebase from 'firebase';
+import * as firebase from 'firebase';
 
-// const firebaseConfig = {
-//   apiKey: "AIzaSyANT_sox-TS0fK110WugUKb8mEvwlwfkfQ",
-//     authDomain: "react-firebase-38af2.firebaseapp.com",
-//     databaseURL: "https://react-firebase-38af2.firebaseio.com",
-//     projectId: "react-firebase-38af2",
-//     storageBucket: "",
+const firebaseConfig = {
+  apiKey: "AIzaSyANT_sox-TS0fK110WugUKb8mEvwlwfkfQ",
+    authDomain: "react-firebase-38af2.firebaseapp.com",
+    databaseURL: "https://react-firebase-38af2.firebaseio.com",
+    projectId: "react-firebase-38af2",
+    storageBucket: "",
 
-// };
+};
 
-// firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
 export default class App extends React.Component {
   
